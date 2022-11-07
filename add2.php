@@ -7,6 +7,7 @@
  $pass2 = htmlentities ($pass2, ENT_QUOTES, "UTF-8"); // rozbrojenie potencjalnej bomby w zmiennej $pass
 
 
+ 
  $link = mysqli_connect(localhost, 'zjzoqabmgp_z5', '(Ez$mz(z)1', 'zjzoqabmgp_z5'); // połączenie z BD – wpisać swoje dane
  if(!$link) { echo"Błąd: ". mysqli_connect_errno()." ".mysqli_connect_error(); } // obsługa błędu połączenia z BD
  mysqli_query($link, "SET NAMES 'utf8'"); // ustawienie polskich znaków
